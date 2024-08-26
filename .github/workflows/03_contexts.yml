@@ -1,0 +1,7 @@
+name: 03 Contexts
+on: push
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo "${{ github.actor }}"   # githubコンテキストの参照
