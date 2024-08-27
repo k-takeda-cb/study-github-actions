@@ -1,0 +1,8 @@
+name: 18 Run name
+run-name: Run by @${{ github.actor }}     # ワークフロー実行名の指定
+on: push
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello"
